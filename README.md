@@ -1,4 +1,4 @@
-# :video_game: Kakaogames2024 :video_game:
+# :video_game: 언어 모델 기반 게임 봇 탐지 분석:video_game:
 
 <img src="./kakaogames_image2024/카겜.jpeg" width="500" height="150"/>
 

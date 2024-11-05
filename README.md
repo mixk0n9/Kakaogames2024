@@ -58,13 +58,13 @@ MMORPG 게임 봇의 특징을 분석하고, sequence-to-text 기법을 활용�
 ## :chart_with_upwards_trend:분석 과정
 
 1. 데이터 및 Label 정의
-- 2023년 3월 8일: 총 11,516명의 데이터
+- 2023년 3월 7일: 총 11,516명의 데이터
 - 운영팀에서 정의한 영구정지, 보호조치 유저를 정답(true label)으로 가정
 - binary label
 
 2. 데이터 가공
 - 하루 동안 유저의 행동 로그를 시간 순서대로 시퀀스로 변환, 이를 텍스트 문장으로 생성
-- 캐릭터 변경 로그도 변경했다는 의미의 문장으로 생성
+- 캐릭터 변경 로그도 '캐릭터를 변경했다'는 문장을 만들어 텍스트에 추가
 - 정상유저를 봇 유저 수만큼 언더샘플링
 - Train, valid, test data 비율은 5:2:3
 
@@ -83,7 +83,7 @@ MMORPG 게임 봇의 특징을 분석하고, sequence-to-text 기법을 활용�
 - RandomForest, XGBoost
 
 4. 결과
-- 4개의 Scenario에서 5회 시뮬레이션
+- 4개의 Scenario에서 5회 시뮬레이션(논문 revision 전에는 5회로 진행)
 
 
 **<Scenario 1: Base>**
